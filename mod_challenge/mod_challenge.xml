@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Challenge</name>
+    <version>1.0.0</version>
+    <description>A simple Challenge module.</description>
+    <files>
+        <filename>mod_challenge.xml</filename>
+        <filename module="mod_challenge">mod_challenge.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="type" type="list" default="" label="Select type" description="">
+                  <option value="minus789">Вычитание 7 8 9</option>
+                  <option value="multiply9">Умножение на 9</option>
+                  <option value="multiply2">Умножение на 2</option>
+                  <option value="multiply4">Умножение на 4</option>
+                  <option value="multiply8">Умножение на 8</option>
+                  <option value="multiply5">Умножение на 5</option>
+                  <option value="multiply25">Умножение на 25</option>
+                  <option value="division2">Деление на 2</option>
+                  <option value="division4">Деление на 4</option>
+                  <option value="multiply19">Умножение на чила 2-9</option>
+                  <option value="multiplyXX">Умножение двухзначных</option>
+                  <option value="multiply11">Умножение на 11</option>
+                  <option value="multiplyXXX11">Умножение трехзначных на 11</option>
+                  <option value="squareX">Квадраты простые</option>
+                  <option value="squareXX">Квадраты двухзначных</option>
+                  <option value="squareXXX">Квадраты трехзначных 9</option>
+                  <option value="squareX5">Квадраты кратных 5-ти</option>
+                </field>
+                <field name="name" type="text" default="" label="Insert name" description="">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
